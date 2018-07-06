@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-edit></app-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <!-- Le saco el href al tag a porque lo voy a usar como un boton mas adelante 
+      Para mostrar algo aca necesito un array de ingredients de shopping-list.component.ts-->
+      <a 
+        class="list-group-item" 
+        style="cursor: pointer;"
+        *ngFor="let ingredient of ingredients">
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>
